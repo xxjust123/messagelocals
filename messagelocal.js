@@ -243,6 +243,18 @@
                 ),
                 n
         }
+        try {
+            const proto = Object.getPrototypeOf(e);
+            if (proto && proto !== Object.prototype) {
+                const result = Object.create(proto);
+                Object.assign(result, e);
+                result._array = t;
+                result.toArray = function() {
+                    return t
+                };
+                return result
+            }
+        } catch {}
         return {
             ...e,
             _array: t,
