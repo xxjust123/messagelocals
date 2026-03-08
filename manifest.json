@@ -1,1 +1,16 @@
-404: Not Found
+{
+  "name": "Messaging Local",
+  "description": "Create and manage local messages in Discord channels. Send test messages that appear only on your device, with support for embeds, link previews, and message caching.",
+  "authors": [
+    {
+      "name": "Unknown",
+      "id": "0"
+    }
+  ],
+  "main": "messagelocal.js",
+  "vendetta": {
+    "icon": "ChatIcon"
+  },
+  "hash": "F5AC294E22BE8777D6DD675C65172D5E1F70356EDFA86075D0A75B7176B79689"
+}
+
